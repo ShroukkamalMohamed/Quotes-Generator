@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ================================Title=================================== -->
+    <title>DANIELS</title>
+    <link rel="shortcut icon" href="images/ico.png" type="image/x-icon" />
+    <!-- ?==============================fonts====================================? -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- ^======================fontAsesome===================================== -->
+    <link rel="stylesheet" href="Css/all.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- *========================favicon=======================================* -->
+    <link rel="shortcut icon" href="Images/.png" type="image/x-icon" />
+    <!-- !=================BootStarp(css)======================================= -->
+    <link rel="stylesheet" href="Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Css/fonts.css" />
+    <!-- &======================style===========================================& -->
+    <link rel="stylesheet" href="Css/mediaqueries.css" />
+    <link rel="stylesheet" href="Css/Animation.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+  <body>
+    <div class="content d-flex flex-column align-items-center">
+      <div class="title">
+        <h1>Quote of the Day</h1>
+      </div>
+      <div class="quoteMark"></div>
+      <div class="quoteContent d-flex">
+        <img
+          width="75px"
+          class="border rounded-circle mx-1"
+          id="authorImg"
+          src="images/20.jpg"
+        />
+        <p id="quoteContentParagrph">
+          “If you set your goals ridiculously high and it's a failure, you will
+          fail above everyone else's success.”
+        </p>
+      </div>
+      <div
+        class="newQuote d-flex flex-column align-items-center justify-content-center"
+      >
+        <p>“Press the button below to recieve a random quote!”</p>
+      </div>
+      <button class="btn" id="newQuotebtn" onclick="GenerateNewQuote() ">
+        NewQuote
+      </button>
+    </div>
+
+    <!-- ?=======Script(js)================== -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/site.js"></script>
+  </body>
+</html>
