@@ -45,7 +45,7 @@ var quotesArr = [{
     index: 14, quote: `“If you tell the truth, you don't have to remember anything.”`
     , Imageurl: `../images/14.jpg`
 }, {
-    index: 15, quote: `“It is during our darkest moments that we must focus to see the light.”`
+    index: 15, quote: `“A friend is someone who understands your past, believes in your future, and accepts you just the way you are.”`
     , Imageurl: `../images/15.jpg`
 }, {
     index: 16, quote: `“There are only two ways to live your life..”`
@@ -54,7 +54,7 @@ var quotesArr = [{
     index: 17, quote: `“The question isn't who's going to let me; it's who's going to stop me.”`
     , Imageurl: `../images/17.jpg`
 }, {
-    index: 18, quote: `“You only live once, but if you do it right, once is enough.”`
+    index: 18, quote: `“The best way to find yourself is to lose yourself in the service of others.”`
     , Imageurl: `../images/18.jpg`
 }, {
     index: 19, quote: `“If you look at what you have in life, you'll always have more.”`
@@ -65,7 +65,7 @@ var quotesArr = [{
 
 function generateRandomNumber() {
     var Generatedindex = Math.floor((Math.random() * (quotesArr.length - 1)));
-  
+    console.log(quotesArr[Generatedindex]);
     return Generatedindex;
 }
 function GenerateNewQuote() {
@@ -73,8 +73,6 @@ function GenerateNewQuote() {
     if (quotesArr.length != 0) {
         quoteContent.innerHTML = quotesArr[index].quote;
         authorImg.src = quotesArr[index].Imageurl;
-        console.log(quotesArr.indexOf(quotesArr[index].quote));
-        quotesArr.splice(quotesArr.indexOf(quotesArr[index].quote), 1);
-
+        quotesArr.splice(index, 1); //to remove the chosen item from arry and pervent repeate
     }
 }
